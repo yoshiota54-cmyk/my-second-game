@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Java Game on Browser</title>
-    <!-- CheerpJ のランタイムを読み込む -->
+    <!-- CheerpJ のランタイムを正しく読み込む -->
     <script src="https://leaningtechnologies.com"></script>
 </head>
 <body>
@@ -13,9 +13,8 @@
     <script>
         // CheerpJの初期化
         cheerpjInit();
-        // JARファイルを指定してメインクラスを実行（container要素内に描画）
-        // ※「com.example.Main」はご自身のゲームのメインクラス名に書き換えてください
-        cheerpjRunJar("/アプリ/MyFirstShooting.jar", "jp.libroworks.FirstShooting", document.getElementById("container"));
+        // フォルダ名「app」に合わせてJARファイルを指定して実行
+        cheerpjRunJar("/app/MyFirstShooting.jar", "jp.libroworks.FirstShooting", document.getElementById("container"));
     </script>
 </body>
 </html>
